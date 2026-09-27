@@ -69,6 +69,92 @@ const projects = {
             "https://github.com/Dhanraj18-art/8bit-RISC-Processor-Verilog"
 
     },
+    ahb: {
+
+    category: "VLSI · RTL · SoC",
+
+    title: "AHB-Like SoC Bus Architecture",
+
+    description:
+        "A modular AHB-like System-on-Chip bus architecture designed and verified in Verilog RTL using Ubuntu Linux. The project implements bus transfer sequencing, burst transactions, memory-mapped peripherals, wait-state handling, error detection and multi-master arbitration.",
+
+    technologies: [
+        "Verilog HDL",
+        "RTL Design",
+        "SoC Architecture",
+        "Icarus Verilog",
+        "GTKWave",
+        "Ubuntu Linux",
+        "Git & GitHub"
+    ],
+
+    features: [
+        "NONSEQ and SEQ transfer handling",
+        "INCR4 burst transfers",
+        "HREADY-based wait-state handling",
+        "Stable transfer signals during wait states",
+        "Memory-mapped RAM and GPIO peripherals",
+        "Address decoding",
+        "HRESP-based error detection",
+        "Unmapped-address detection",
+        "Multi-master bus arbitration",
+        "Round-robin arbitration",
+        "RTL simulation and waveform verification"
+    ],
+
+    architecture: `
+
+        <div class="architecture">
+
+            <p>
+                SYSTEM ARCHITECTURE
+            </p>
+
+            <div class="vidyut-flow">
+
+                <div>
+                    Master 0 / Master 1
+                </div>
+
+                <span>↓</span>
+
+                <div>
+                    Round-Robin Arbiter
+                </div>
+
+                <span>↓</span>
+
+                <div class="highlight">
+                    AHB-Like Bus
+                </div>
+
+                <span>↓</span>
+
+                <div>
+                    Address Decoder
+                </div>
+
+                <span>↓</span>
+
+                <div>
+                    RAM / GPIO
+                </div>
+
+                <span>↓</span>
+
+                <div>
+                    HREADY / HRESP
+                </div>
+
+            </div>
+
+        </div>
+
+    `,
+
+    github: "https://github.com/Dhanraj18-art/ahb-like-soc"
+
+}
 
 
     attendance: {
@@ -136,80 +222,7 @@ const projects = {
     },
 
 
-    apb: {
-
-        category: "VLSI · RTL · FPGA",
-
-        title: "AMBA APB Bus Architecture",
-
-        description:
-            "Designing and verifying an AMBA APB-compatible bus architecture using Verilog HDL with master/slave communication, FSM-based control and waveform verification.",
-
-        technologies: [
-            "Verilog HDL",
-            "AMBA APB",
-            "FSM",
-            "Testbench",
-            "Simulation"
-        ],
-
-        features: [
-            "APB Master",
-            "APB Slave",
-            "Address decoding",
-            "Read transactions",
-            "Write transactions",
-            "PSEL",
-            "PENABLE",
-            "PWRITE",
-            "PADDR",
-            "PWDATA",
-            "PRDATA",
-            "PREADY",
-            "PSLVERR"
-        ],
-
-        architecture: `
-
-            <div class="architecture">
-
-                <p>AMBA APB TRANSACTION FLOW</p>
-
-                <div class="apb-flow">
-
-                    <div>
-                        <strong>IDLE</strong>
-                    </div>
-
-                    <span>→</span>
-
-                    <div>
-                        <strong>SETUP</strong>
-                        <small>PSEL = 1</small>
-                    </div>
-
-                    <span>→</span>
-
-                    <div>
-                        <strong>ACCESS</strong>
-                        <small>PENABLE = 1</small>
-                    </div>
-
-                    <span>→</span>
-
-                    <div>
-                        <strong>READY</strong>
-                        <small>PREADY = 1</small>
-                    </div>
-
-                </div>
-
-            </div>
-
-        `
-
-    },
-
+  
 
     vidyut: {
 
