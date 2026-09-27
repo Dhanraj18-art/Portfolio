@@ -2875,4 +2875,17 @@ footer {
 
     }
 
+}/* =====================================================
+   AHB-LIKE SOC PROJECT IMAGE
+===================================================== */
+
+.project-card[data-category="vlsi soc"] .project-image {
+    overflow: hidden;
+}
+
+.project-card[data-category="vlsi soc"] .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
